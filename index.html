@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Vault Tracker</title>
+    <meta name="description" content="Build a consistent savings habit by tracking deposits, visualizing progress, and earning milestone achievements.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="app-container">
+        
+        <!-- Header -->
+        <header class="glass-panel">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="url(#paint0_linear)"/>
+                    <path d="M12 6V18M8 10H16M8 14H16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#00F0FF" />
+                            <stop offset="1" stop-color="#7000FF" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <h1>Vault Tracker</h1>
+            </div>
+            <button class="btn btn-outline" id="connect-wallet-btn">Connect Wallet</button>
+        </header>
+
+        <!-- Main Dashboard -->
+        <main class="dashboard-grid">
+            
+            <!-- Left Column: Overview and Deposit -->
+            <div class="overview-section glass-panel">
+                <h2 class="section-title">Overview</h2>
+                
+                <div class="balance-container">
+                    <p class="balance-label">Total Saved</p>
+                    <h3 class="balance-amount">$<span id="total-saved">0</span></h3>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-header">
+                        <span>Goal Progress</span>
+                        <span id="goal-text">$0 / $10,000</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progress-bar" style="width: 0%;"></div>
+                    </div>
+                </div>
+
+                <div class="deposit-form">
+                    <h2 class="section-title">Add Funds</h2>
+                    <div class="input-group">
+                        <span class="currency-symbol">$</span>
+                        <input type="number" id="deposit-amount" placeholder="Enter amount to save" min="1" step="0.01">
+                        <button class="btn btn-primary" id="deposit-btn">Deposit</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Transactions & Milestones -->
+            <div class="right-column">
+                
+                <!-- Milestones -->
+                <div class="milestone-section glass-panel">
+                    <h2 class="section-title">Milestones</h2>
+                    <div class="badges-grid" id="badges-grid">
+                        <!-- Badges injected by JS -->
+                    </div>
+                </div>
+
+                <!-- Recent Transactions -->
+                <div class="history-section glass-panel">
+                    <h2 class="section-title">Recent Transactions</h2>
+                    <ul class="transaction-list" id="transaction-list">
+                        <!-- Transactions injected by JS -->
+                        <li class="empty-state">No transactions yet. Start saving!</li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </main>
+    </div>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
