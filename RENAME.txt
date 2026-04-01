@@ -1,0 +1,34 @@
+# Savings Vault Tracker
+
+## Project Overview
+
+The **Savings Vault Tracker** is a simple web app that helps you save your cryptocurrency (ALGO tokens) safely. It acts like a digital piggy bank! The app keeps track of the money you save over time and rewards you with fun digital badges when you reach your saving goals. It makes saving money on the Algorand blockchain fun, visual, and very easy to follow.
+
+## Features
+
+- **Connect Your Wallet:** Easily link your digital wallet to the app with one click.
+- **Deposit Money Safely:** Put your ALGO tokens into your vault. Only you have control over your money.
+- **Track Your Goals:** Watch your savings grow and see how close you are to your goals on a beautiful dashboard.
+- **Earn Cool Badges:** Get rewarded with special badges (like Silver, Gold, or Platinum) as your savings increase.
+- **View Your History:** Look back at all your past deposits in a simple, easy-to-read list.
+- **Beautiful Design:** The app looks great and is simple to use on any computer.
+
+## Tech Stack
+
+This project is built using basic web tools:
+
+- **HTML:** To build the structure of the website.
+- **CSS:** To make the website look colorful, modern, and beautiful.
+- **JavaScript:** To make the buttons work and connect the website to your wallet securely.
+- **Algorand:** The blockchain network that handles the digital money (ALGO).
+
+## Setup Steps
+
+Follow these easy steps to open the app on your computer:
+
+1. **Download the Code:** Download the project folder to your computer.
+2. **Open the Folder:** Go into the folder where you saved the files.
+3. **Run the App:** Simply double-click on the `index.html` file. It will immediately open in your normal web browser (like Google Chrome, Safari, or Edge).
+4. **Start Saving!** When the website opens, you can view the design and interact with the vault!
+
+*(Note: If you are making changes to the Javascript code or testing advanced wallet connections, it is recommended to open the folder using a tool like "Live Server" in Visual Studio Code).*
